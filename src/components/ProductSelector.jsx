@@ -1,7 +1,8 @@
 import { products } from "../data/produits";
 import { useState } from "react";
+
 function ProductSelector() {
-    const [quantity, setQuantity] = useState(0);
+
     return (
         <div className="product-selector">
             <h2>Products List</h2>
@@ -11,13 +12,14 @@ function ProductSelector() {
                         <h3 className="product-name">{product.name}</h3>
                         <p className="product-description">{product.description}</p>
                         <p className="product-price">Price: {product.price} MAD</p>
-
-                       {quantity === 0 ? (<button onClick={() => setQuantity(quantity - 1)}>decrement</button>) : null}
+                        <label className="quantity-label" htmlFor={`quantity-${product.id}`}>Quantity:</label>
+                        <input  type="number" id={`quantity-${product.id}`} min="0" defaultValue="0" />
+                        
                     </div>
                 ))}
             </div>
         </div>
-
     )
 }
+
 export default ProductSelector;

@@ -12,6 +12,8 @@
   font-size: 1rem;
   margin-bottom: 1rem;
   color: green;
+  text-align: center;
+  
 }
 
 .sidebar {
@@ -52,9 +54,23 @@
   margin-bottom: 1rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background-color: #8a7c7c;
-  
+  display: grid;
+  gap: 10px;
+
 }
 
+.quantity-label {
+  width: 60px;
+  padding: 0.25rem;
+  margin-left: 0.5rem;
+  color: #3eff0d;
+}
+
+.products-holder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
 
 body {
   font-family: Arial, sans-serif;
