@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import Sidbar  from './components/Sidbar'
-import ProductSelector from  './components/ProductSelector'
+import Sidbar from './components/Sidbar'
+import ProductSelector from './components/ProductSelector'
+import Navbar from './components/navbar'
+
 
 
 function App() {
@@ -10,9 +12,9 @@ function App() {
   return (
     <>
       <div className="title">
-        <h1>Coopérative Elghousni</h1>
-        <p>application de gestion des commandes</p>
-
+        <Navbar />
+        {/* <h1>Coopérative Elghousni</h1>
+        <p>application de gestion des commandes</p> */}
       </div>
       <Sidbar />
       <ProductSelector />
