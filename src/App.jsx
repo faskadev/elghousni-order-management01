@@ -18,9 +18,7 @@ function App() {
       <Sidbar />
       <ProductSelector />
 
-      <div>
-      <OrderSummary />
-    </div>
+      
 
     </>
   )
