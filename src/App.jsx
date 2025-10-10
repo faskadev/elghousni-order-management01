@@ -5,8 +5,6 @@ import ProductSelector from './components/ProductSelector'
 import Navbar from './components/navbar'
 import OrderSummary from './components/OrderSummary'
 
-
-
 function App() {
   const [count, setCount] = useState(0)
 
@@ -17,7 +15,7 @@ function App() {
       </div>
       <Sidbar />
       <ProductSelector />
-
+      <OrderSummary quantity={2} productid={1} />
       
 
     </>
