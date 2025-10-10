@@ -7,7 +7,6 @@ function OrderSummary({ quantity, productid }) {
   if (!product) {
     return <p>Produit introuvable.</p>;
   }
-
   const total = product.price * quantity;
 
   return (
