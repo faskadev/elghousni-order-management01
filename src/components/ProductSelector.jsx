@@ -13,7 +13,7 @@ function ProductSelector() {
                         <p className="product-description">{product.description}</p>
                         <p className="product-price">Price: {product.price} MAD</p>
                         <label className="quantity-label" htmlFor={`quantity-${product.id}`}>Quantity:</label>
-                        <input  type="number" id={`quantity-${product.id}`} min="0" defaultValue="0" />
+                        <input  type="number" id={`quantity-${product.id}`} min="0" defaultValue="1" />
                         
                     </div>
                 ))}

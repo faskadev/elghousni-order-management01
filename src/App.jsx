@@ -3,6 +3,7 @@ import './App.css'
 import Sidbar from './components/Sidbar'
 import ProductSelector from './components/ProductSelector'
 import Navbar from './components/navbar'
+import OrderSummary from './components/OrderSummary'
 
 
 
@@ -13,11 +14,14 @@ function App() {
     <>
       <div className="title">
         <Navbar />
-        {/* <h1>Coopérative Elghousni</h1>
-        <p>application de gestion des commandes</p> */}
       </div>
       <Sidbar />
       <ProductSelector />
+
+      <div>
+      <OrderSummary />
+    </div>
+
     </>
   )
 }
