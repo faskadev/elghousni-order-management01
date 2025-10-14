@@ -15,7 +15,7 @@ function App() {
       </div>
       <Sidbar />
       <ProductSelector />
-      <OrderSummary quantity={2} productid={1} />
+      <OrderSummary quantity={0} productid={0} />
       
 
     </>

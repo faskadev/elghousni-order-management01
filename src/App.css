@@ -82,7 +82,14 @@ body {
 .product-selector {
   margin-left: 220px; /* To avoid overlap with sidebar */
   padding: 1rem;
-  border-radius: 1 rem;
+  border-radius: 1rem;
   background-color: rgb(119, 199, 99);
 
+}
+.order-summary {
+  margin-left: 220px; /* To avoid overlap with sidebar */
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
