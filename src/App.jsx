@@ -4,6 +4,7 @@ import Sidbar from "./components/Sidbar";
 import ProductSelector from "./components/ProductSelector";
 import Navbar from "./components/Navbar";
 import OrderSummary from "./components/OrderSummary";
+import ProductManager from "./ProductManager"; 
 
 function App() {
   const [orders, setOrders] = useState([]); // ⬅️ هنا نخزن الطلبات
@@ -19,7 +20,7 @@ function App() {
             : o
         );
       }
-      // إذا جديد، نضيفو
+      
       return [...prev, { productid, quantity }];
     });
   };
@@ -30,8 +31,10 @@ function App() {
         <Navbar />
       </div>
       <Sidbar />
-      <ProductSelector onAddOrder={handleAddOrder} />
+      <ProductSelector/>
+
       <OrderSummary orders={orders} />
+      <ProductManager />
     </>
   );
 }
