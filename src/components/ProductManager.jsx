@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import useProductStore from "./productStore";
+
+import useProductStore from "../store/productStore";
 
 function ProductItem({ item, onEdit, onRemove }) {
   return (

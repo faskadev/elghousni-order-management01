@@ -4,7 +4,9 @@ import Sidbar from "./components/Sidbar";
 import ProductSelector from "./components/ProductSelector";
 import Navbar from "./components/Navbar";
 import OrderSummary from "./components/OrderSummary";
-import ProductManager from "./ProductManager"; 
+import ProductManager from "./components/ProductManager"; 
+
+
 
 function App() {
   const [orders, setOrders] = useState([]); // ⬅️ هنا نخزن الطلبات
