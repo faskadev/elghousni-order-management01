@@ -15,9 +15,9 @@ function App() {
 
   return (
     <>
-      <div className="title">
+      
         <Navbar />
-      </div>
+        <Sidbar />
 
       <ProductSelector/>
       <ProductItem />

@@ -3,8 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 #root {
-  
+
   height: 100vh;
 }
 
@@ -15,7 +16,7 @@
   text-align: center;
   font-weight: bold;
   margin-top: 20px;
-  
+
 }
 
 .sidebar {
@@ -25,7 +26,7 @@
   border-right: 1px solid #ccc;
   height: 100%;
   position: fixed;
-  
+
 }
 
 .sidebar-list {
@@ -80,56 +81,59 @@ body {
 }
 
 .product-selector {
-  margin-left: 220px; /* To avoid overlap with sidebar */
+  margin-left: 220px;
+  /* To avoid overlap with sidebar */
   padding: 1rem;
   border-radius: 1rem;
   background-color: rgb(119, 199, 99);
 
 }
+
 .order-summary {
-  margin-left: 220px; /* To avoid overlap with sidebar */
+  margin-left: 220px;
+  /* To avoid overlap with sidebar */
   padding: 1rem;
   border-radius: 8px;
   background-color: #f9f9f9;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .order-summary h2 {
   margin-bottom: 1rem;
   color: #333;
   margin-left: 220px;
 }
-.titlegestion {
-  margin-left: 220px; /* To avoid overlap with sidebar */
-  padding: 1rem;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+
 .ajouter-product {
   background-color: #77c763;
   margin-left: 220px;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 2rem 1rem;
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s;
   justify-items: center;
 
+
 }
+
 .product-form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 1rem;
   border-radius: 8px;
   background-color: #f9f9f9;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
+
 .product-form label {
   font-weight: bold;
   color: #333;
 }
+
 .product-form input {
   padding: 0.5rem;
   border: 3px solid #8a7c7c;
