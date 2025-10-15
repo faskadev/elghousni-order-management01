@@ -18,11 +18,12 @@ function App() {
       <div className="title">
         <Navbar />
       </div>
+
       <ProductSelector/>
       <ProductItem />
 
       <OrderSummary orders={orders} />
-      <h1 className="titlegestion">Gestion des Produits</h1>
+      
     </>
   );
 }

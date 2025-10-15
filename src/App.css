@@ -105,3 +105,44 @@ body {
   background-color: #f9f9f9;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+.ajouter-product {
+  background-color: #77c763;
+  margin-left: 220px;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  justify-items: center;
+
+}
+.product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.product-form label {
+  font-weight: bold;
+  color: #333;
+}
+.product-form input {
+  padding: 0.5rem;
+  border: 3px solid #8a7c7c;
+  border-radius: 4px;
+}
+
+.buttonadd {
+  background-color: #8a7c7c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
