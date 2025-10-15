@@ -1,9 +1,10 @@
 // src/components/ProductSelector.jsx
-import { products } from "../data/produits";
 import { useState } from "react";
+import useProductStore from "../store/productStore";
 
 function ProductSelector({ onAddOrder }) {
     const [quantities, setQuantities] = useState({});
+    const { items } = useProductStore()
 
 
     const handleQuantityChange = (id, value) => {
@@ -26,7 +27,7 @@ function ProductSelector({ onAddOrder }) {
     <div className="product-selector">
       <h2>Products List</h2>
       <div className="products-holder">
-        {products.map((product) => (
+        {items.map((product) => (
           <div className="product-card" key={product.id}>
             <h3 className="product-name">{product.name}</h3>
             <p className="product-description">{product.description}</p>

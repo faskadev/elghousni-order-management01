@@ -1,7 +1,8 @@
 import { create } from "zustand";
+import { products } from "../data/produits";
 
 const useProductStore = create((set) => ({
-  items: [],
+  items: products,
   addProduct: (product) =>
     set((state) => ({ items: [...state.items, product] })),
   removeProduct: (id) =>

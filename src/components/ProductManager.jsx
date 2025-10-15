@@ -1,31 +1,34 @@
 import React, { useState } from "react";
-
 import useProductStore from "../store/productStore";
 
-function ProductItem({ item, onEdit, onRemove }) {
-  return (
-    <li>
-      {item.name} - {item.price}€
-      <button onClick={() => onEdit(item.id)}>Modifier</button>
-      <button onClick={() => onRemove(item.id)}>Supprimer</button>
-    </li>
-  );
+function ProductItem() {
+    const { addProduct } = useProductStore();
+    const [values, setValues] = useState({
+        name: "",
+        description: "",
+        price: "",
+        id: Math.floor(Math.random() * 10000) 
+    });
+
+    return (
+        <>
+            <h2>Ajouter un nouveau produit</h2>
+            <div className="product-form">
+                <label>Nom:</label>
+                <input onChange={(e) => setValues({ ...values, name: e.target.value })} type="text" placeholder="Nom du produit" />
+                <label>Description:</label>
+                <input onChange={(e) => setValues({ ...values, description: e.target.value })} type="text" placeholder="Description du produit" />
+                <label>Prix:</label>
+                <input onChange={(e) => setValues({ ...values, price: e.target.value })} type="number" placeholder="Prix du produit" />
+            </div>
+            <button onClick={() => addProduct(values)}>Ajouter</button>
+
+
+        </>
+    );
+
+
 }
 
-export default function ProductManager() {
-  const { items, addProduct, removeProduct, editProduct } = useProductStore();
-  
-  return (
-    <ul>
-      {items.map(item => (
-        <ProductItem
-          key={item.id}
-          item={item}
-          onEdit={editProduct}
-          onRemove={removeProduct}
-        />
-      ))}
-    </ul>
-  );
-}
+export default ProductItem;
 

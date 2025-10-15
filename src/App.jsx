@@ -4,39 +4,25 @@ import Sidbar from "./components/Sidbar";
 import ProductSelector from "./components/ProductSelector";
 import Navbar from "./components/Navbar";
 import OrderSummary from "./components/OrderSummary";
-import ProductManager from "./components/ProductManager"; 
+import ProductItem from "./components/ProductManager";
+import useProductStore from "./store/productStore";
 
 
 
 function App() {
   const [orders, setOrders] = useState([]); // ⬅️ هنا نخزن الطلبات
 
-  const handleAddOrder = (productid, quantity) => {
-    setOrders((prev) => {
-      // إذا المنتج موجود من قبل، نحدّث الكمية
-      const existing = prev.find((o) => o.productid === productid);
-      if (existing) {
-        return prev.map((o) =>
-          o.productid === productid
-            ? { ...o, quantity: o.quantity + quantity }
-            : o
-        );
-      }
-      
-      return [...prev, { productid, quantity }];
-    });
-  };
 
   return (
     <>
       <div className="title">
         <Navbar />
       </div>
-      <Sidbar />
       <ProductSelector/>
+      <ProductItem />
 
       <OrderSummary orders={orders} />
-      <ProductManager />
+      <h1 className="titlegestion">Gestion des Produits</h1>
     </>
   );
 }

@@ -57,8 +57,3 @@ export const products = [
   }
 ];
 
-export const orderStatuses = [
-  { value: 'pending', label: 'En attente', color: '#f59e0b' },
-  { value: 'prepared', label: 'Préparée', color: '#3b82f6' },
-  { value: 'delivered', label: 'Livrée', color: '#10b981' }
-];
