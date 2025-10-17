@@ -13,16 +13,18 @@ function ProductItem() {
     return (
         <>
             <div className="ajouter-product">
-                <h2 >Ajouter un nouveau produit</h2>
+                <h2 >Add a new product</h2>
                 <div className="product-form">
-                    <label>Nom:</label>
-                    <input onChange={(e) => setValues({ ...values, name: e.target.value })} type="text" placeholder="Nom du produit" />
+                    <label>Image:</label>
+                    <input onChange={(e) => setValues({ ...values, image: e.target.files[0] })} type="file" accept="image/*"/>
+                    <label>Name:</label>
+                    <input onChange={(e) => setValues({ ...values, name: e.target.value })} type="text" placeholder="Product Name" />
                     <label>Description:</label>
-                    <input onChange={(e) => setValues({ ...values, description: e.target.value })} type="text" placeholder="Description du produit" />
-                    <label>Prix:</label>
-                    <input onChange={(e) => setValues({ ...values, price: e.target.value })} type="number" placeholder="Prix du produit" />
+                    <input onChange={(e) => setValues({ ...values, description: e.target.value })} type="text" placeholder="Product Description" />
+                    <label>Price:</label>
+                    <input onChange={(e) => setValues({ ...values, price: e.target.value })} type="number" placeholder="Product Price" />
                 </div>
-                <button className="buttonadd" onClick={() => addProduct(values)}>Ajouter</button>
+                <button className="buttonadd" onClick={() => addProduct(values)}>Add</button>
 
             </div>
 
