@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import OrderSummary from "./components/OrderSummary";
 import ProductItem from "./components/ProductManager";
 import useProductStore from "./store/productStore";
-
+import { BrowserRouter as Router ,Route,Routes } from "react-router-dom";
 
 
 function App() {
@@ -14,17 +14,21 @@ function App() {
 
 
   return (
-    <>
-      
+    
+      <Router>
         <Navbar />
         <Sidbar />
 
-      <ProductSelector/>
-      <ProductItem />
+        <Routes>
+          <Route path="/add-product" element={<ProductItem />} />
+          <Route path="/product-list" element={<ProductSelector />} />
+        </Routes>
+      
 
       <OrderSummary orders={orders} />
+      </Router>
       
-    </>
+    
   );
 }
 
