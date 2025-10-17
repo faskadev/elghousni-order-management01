@@ -5,7 +5,6 @@
 }
 
 #root {
-
   height: 100vh;
 }
 
@@ -13,7 +12,7 @@
   background-color: #77c763;
   padding: 1rem;
   box-shadow: 0 2px 5px #0000001a;
-  margin-left: 220px;
+  margin-left: 200px;
   border-radius: 10px;
   color: #000000;
   text-align: center;
@@ -33,12 +32,11 @@
 
 .sidebar {
   width: 200px;
-  background-color: #f4f4f4;
-  padding: 1rem;
-  border-right: 1px solid #ccc;
+  background-color: #b6f09b;
+  padding: 1rem; 
   height: 100%;
   position: fixed;
-
+  border-radius: 10px solid #111010;
 }
 
 .sidebar-list {
@@ -50,7 +48,7 @@
 }
 
 .buttonsidbar {
-  background-color: #77c763;
+  background-color: #ffffff;
   color: #000000;
   font-weight: bold;
   padding: 0.5rem;
@@ -93,7 +91,7 @@ body {
 }
 
 .product-selector {
-  margin-left: 220px;
+  margin-left: 200px;
   /* To avoid overlap with sidebar */
   padding: 1rem;
   border-radius: 1rem;
@@ -102,7 +100,7 @@ body {
 }
 
 .order-summary {
-  margin-left: 220px;
+  margin-left: 200px;
   /* To avoid overlap with sidebar */
   padding: 1rem;
   border-radius: 8px;
@@ -113,12 +111,12 @@ body {
 .order-summary h2 {
   margin-bottom: 1rem;
   color: #333;
-  margin-left: 220px;
+  margin-left: 200px;
 }
 
 .ajouter-product {
   background-color: #77c763;
-  margin-left: 220px;
+  margin-left: 200px;
   color: white;
   border: none;
   padding: 2rem 1rem;
@@ -164,7 +162,7 @@ body {
 }
 
 .dashboard {
-  margin-left: 220px;
+  margin-left: 200px;
   padding: 1rem;
   background-color: #8a7c7c;
   border-radius: 19px;

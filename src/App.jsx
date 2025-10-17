@@ -18,9 +18,8 @@ function App() {
     
       <Router>
         
-        <Navbar />
-        
         <Sidbar />
+        <Navbar />
 
         <Routes>
           <Route path="/add-product" element={<ProductItem />} />
